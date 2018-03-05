@@ -4,7 +4,6 @@ var bodyParser = require('body-parser');
 
 var messages = [{ text: 'some text', owner: 'Tim' }, { text: 'other message', owner: 'Jane' }];
 
-
 app.use(bodyParser.json());
 app.use((req, res, next) => {
     res.header("Access-Control-Allow-Origin", "*");
