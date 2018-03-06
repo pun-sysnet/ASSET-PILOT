@@ -20,7 +20,6 @@ api.get('/messages', (req, res) => {
 api.get('/messages/:user', (req, res) => {
     var user = req.params.user;
     var result = messages.filter(message => message.owner.toLowerCase() == user.toLowerCase());
-
     res.json(result);
 })
 
