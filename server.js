@@ -11,7 +11,6 @@ app.use((req, res, next) => {
     next();
 })
 
-
 var api = express.Router();
 api.get('/messages', (req, res) => {
     res.json(messages);
